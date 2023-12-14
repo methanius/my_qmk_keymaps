@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_OS] = LAYOUT_split_3x5_2(
-        KC_TRNS,         KC_TRNS,         KC_COLN,         KC_ESC,          KC_TRNS,                                                            UP(KC_ae, KC_AE),         C(KC_TAB),         KC_TRNS,         KC_TRNS,         KC_DEL,
+        UC_NEXT,         KC_TRNS,         KC_COLN,         KC_ESC,          KC_TRNS,                                                            UP(KC_ae, KC_AE),         C(KC_TAB),         KC_TRNS,         KC_TRNS,         KC_DEL,
         KC_TRNS,         KC_PERC,         KC_SLSH,         KC_ENT,          KC_TRNS,                                                            UP(KC_oe, KC_OE),         KC_LGUI,         KC_L,            KC_TRNS,         KC_TRNS,
         KC_TRNS,         KC_TRNS,         KC_TRNS,         KC_EXLM,         KC_TRNS,                                                            UP(KC_aa, KC_AA),         KC_TRNS,         RALT_T(KC_COMM), RCTL_T(KC_DOT),  QK_BOOT,
                                                                             KC_TRNS,         KC_TAB,                           KC_TRNS,         KC_TRNS
