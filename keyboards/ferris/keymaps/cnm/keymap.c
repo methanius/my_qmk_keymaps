@@ -1,7 +1,5 @@
 #include QMK_KEYBOARD_H
 
-#include <keymap_danish.h>
-
 
 enum layers {
     _QWERTY,
@@ -37,10 +35,10 @@ const uint32_t unicode_map[] PROGMEM = {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 	[_QWERTY] = LAYOUT_split_3x5_2(
-        KC_Q,            KC_W,            LALT_T(KC_E),            LCTL_T(KC_R),    KC_T,                                                       KC_Y,    RCTL_T(KC_U),    LALT_T(KC_I),            KC_O,            KC_P,
-        KC_A,            LT(_FUNS,KC_S),      LT(_MOUSE,KC_D),      LT(_SYMBOLS,KC_F),      KC_G,                                                               KC_H,            LT(_PARENS,KC_J),      LT(_ARROWS,KC_K),      LT(_NUMBERS,KC_L),      KC_SCLN,
-        KC_Z,            KC_X,            KC_C,            KC_V,            KC_B,                                                               KC_N,            KC_M,            KC_COMM,         KC_DOT,          KC_SLSH,
-                                                                            KC_LSFT,         KC_BSPC,                          LT(_OS,KC_SPC),    KC_ESC
+        KC_Q,            KC_W,            LALT_T(KC_E),    LCTL_T(KC_R),       KC_T,                                                            KC_Y,            RCTL_T(KC_U),     LALT_T(KC_I),     KC_O,              KC_P,
+        KC_A,            LT(_FUNS,KC_S),  LT(_MOUSE,KC_D), LT(_SYMBOLS,KC_F),  KC_G,                                                            KC_H,            LT(_PARENS,KC_J), LT(_ARROWS,KC_K), LT(_NUMBERS,KC_L), KC_SCLN,
+        KC_Z,            KC_X,            KC_C,            KC_V,               KC_B,                                                            KC_N,            KC_M,             KC_COMM,          KC_DOT,            KC_SLSH,
+                                                                            KC_LSFT,         KC_BSPC,                          LT(_OS,KC_SPC),  KC_ESC
     ),
 
 	[_MOUSE] = LAYOUT_split_3x5_2(
@@ -86,10 +84,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
 	[_OS] = LAYOUT_split_3x5_2(
-        UC_NEXT,         KC_TRNS,         KC_COLN,         KC_ESC,          KC_TRNS,                                                            UP(KC_ae, KC_AE),         C(KC_TAB),         KC_TRNS,         KC_TRNS,         KC_DEL,
-        KC_TRNS,         KC_PERC,         KC_SLSH,         KC_ENT,          KC_TRNS,                                                            UP(KC_oe, KC_OE),         KC_LGUI,         KC_L,            KC_TRNS,         KC_TRNS,
+        KC_TRNS,         KC_TRNS,         KC_COLN,        KC_TRNS,         KC_TRNS,                                                            UP(KC_ae, KC_AE),         C(KC_TAB),       KC_TRNS,         KC_TRNS,         KC_DEL,
+        KC_TRNS,         KC_PERC,         KC_SLSH,         KC_ENT,          KC_TRNS,                                                            UP(KC_oe, KC_OE),         KC_LGUI,         G(KC_L),         KC_TRNS,         KC_TRNS,
         KC_TRNS,         KC_TRNS,         KC_TRNS,         KC_EXLM,         KC_TRNS,                                                            UP(KC_aa, KC_AA),         KC_TRNS,         RALT_T(KC_COMM), RCTL_T(KC_DOT),  QK_BOOT,
-                                                                            KC_TRNS,         KC_TAB,                           KC_TRNS,         KC_TRNS
+                                                                            KC_TRNS,         KC_TAB,                           KC_NO,         KC_TRNS
     ),
 
 };
